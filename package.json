@@ -1,10 +1,12 @@
 {
-  "name": "scratch-pad",
+  "name": "Isomorphic-Javascript",
   "version": "0.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "webpack && node ./bin/www"
   },
+  "author": "cuitianze (QQ:1007381878)",
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
@@ -12,6 +14,17 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+    "react": "^0.14.6",
+    "react-engine": "^2.6.2",
+    "react-router": "^0.13.4",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-react": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "json-loader": "^0.5.4",
+    "webpack": "^1.12.10"
   }
 }
